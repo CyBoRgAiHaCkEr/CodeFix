@@ -29,17 +29,17 @@ def run_medic(code: str, mode: str) -> str:
         st.error(f"❌ Maverick Offline: {e}")
         return ""
 
-st.title("🚀 C0de Fixx\nMade By CyBoRgAiHaCkEr")
+st.title("🚀 C0de F!xx\nM@de By CyBoRgAiHaCkEr")
 st.write("Paste your code below and choose a mode:")
 
 code_input = st.text_area("Code to analyze", height=400)
-mode = st.selectbox("Mode", ["fix", "explain"])
+mode = st.selectbox("Mode", ["F!xx", "Expl@inn"])
 
 if st.button("Run"):
     with st.spinner("Maverick is analyzing..."):
         result = run_medic(code_input, mode)
     if result:
-        st.success("Result ready!")
+        st.success("Result re@dy!")
         st.code(result, language="python")
         st.button("Copy to clipboard", on_click=lambda: st.session_state.__setitem__("clipboard", result))
         if "clipboard" in st.session_state:
