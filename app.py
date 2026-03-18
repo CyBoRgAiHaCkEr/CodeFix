@@ -29,7 +29,7 @@ def run_medic(code: str, mode: str) -> str:
         st.error(f"❌ Maverick Offline: {e}")
         return ""
 
-st.title("🚀 MEDIC STATION")
+st.title("🚀 C0de Fixx/nMade By CyBoRgAiHaCkEr")
 st.write("Paste your code below and choose a mode:")
 
 code_input = st.text_area("Code to analyze", height=400)
